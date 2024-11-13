@@ -1,0 +1,60 @@
+/* App.css */
+.app-container {
+  display: grid;
+  grid-template-columns: 175px 1fr; /* Sidebar and Main Content */
+  height: 100vh;
+}
+
+/* App.css */
+/* App.css */
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center the email box and controls horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.email {
+  max-width: 800px; /* Ensure the email box has a reasonable width */
+  margin-bottom: 20px; /* Space between the email box and controls */
+}
+
+.controls {
+  align-self: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Space above the controls */
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  border-right: 1px solid #ccc;
+  /*padding: 10px;*/
+}
+
+.email-viewer {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+button.red {
+  background-color: red;
+}
+
+button.green {
+  background-color: green;
+}

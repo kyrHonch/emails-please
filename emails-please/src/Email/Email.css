@@ -1,0 +1,44 @@
+/* Email.css */
+
+.email-viewer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px; /* Optional: Limit width for readability */
+    margin: 0 auto; /* Center the email viewer */
+    background-color: #fff;
+}
+
+.email-header {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.email-body {
+    height: 400px; /* Static height for the email body */
+    overflow-y: auto; /* Makes the body scrollable if the content overflows */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    color: #666;
+}

@@ -1,0 +1,32 @@
+.button {
+    display: flex; /* Enable flexbox for the button */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    padding: 15px 40px; /* Adjust padding for size */
+    font-size: 1.2rem; /* Ensure text is readable */
+    text-align: center; /* Align text for fallback */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 120px; /* Ensure consistent button width */
+    height: 60px; /* Set consistent button height for appearance */
+}
+
+.button.block {
+    background-color: #f44336; /* Red for "Block" */
+    color: white;
+}
+
+.button.block:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.button.send {
+    background-color: #4caf50; /* Green for "Send" */
+    color: white;
+}
+
+.button.send:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
