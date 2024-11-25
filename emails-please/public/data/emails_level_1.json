@@ -1,0 +1,26 @@
+[
+  {
+    "Header": "Urgent: Account Suspended",
+    "Body": "Dear user, your account has been suspended. Click here to restore access.",
+    "EmailSender": "noreply@account.com",
+    "NameSender": "Account Support",
+    "EmailReceiver": "user@example.com",
+    "NameReceiver": "User Name",
+    "ErrorType": "Phishing",
+    "ErrorField": "Body",
+    "Completed": false,
+    "Images": []
+  },
+  {
+    "Header": "Urgent: Account Suspended",
+    "Body": "Dear user, your account has been suspended. Click here to restore access.",
+    "EmailSender": "noreply@account.com",
+    "NameSender": "Account Support",
+    "EmailReceiver": "user@example.com",
+    "NameReceiver": "User Name",
+    "ErrorType": "Phishing",
+    "ErrorField": "Body",
+    "Completed": false,
+    "Images": []
+  }
+]

@@ -4,30 +4,27 @@ import './Sidebar.css';
 function Sidebar({ criteria, onSelect }) {
     const [selected, setSelected] = useState(null);
 
-    const handleClick = (index) => {
+    const handleClick = (index, criterion) => {
         if (selected === index) {
-            // If the same button is clicked again, unselect it
             setSelected(null);
             onSelect(null);
         } else {
             setSelected(index);
-            onSelect(criteria[index]);
+            onSelect(criterion);
         }
     };
 
     return (
         <div className="sidebar">
-            <ul className="criteria-list">
-                {criteria.map((criterion, index) => (
-                    <li
-                        key={index}
-                        className={`criteria-item ${selected === index ? 'selected' : ''}`}
-                        onClick={() => handleClick(index)}
-                    >
-                        {criterion}
-                    </li>
-                ))}
-            </ul>
+            {criteria.map((criterion, index) => (
+                <div
+                    key={index}
+                    className={`criteria-item ${selected === index ? 'selected' : ''}`}
+                    onClick={() => handleClick(index, criterion)}
+                >
+                    {criterion}
+                </div>
+            ))}
         </div>
     );
 }
