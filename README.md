@@ -15,3 +15,6 @@ Papers Please Copy, but with a twist
 4. Once you think you are ready to make the decision, press block or send at the bottom of the screen, which will take you to the next email in the level. Upon completing all 5 levels, the game will show you your statistics and your accuracy score.
 5. To go to the next level, you need to maintain an accuracy score of above 60.
 6. There are 3 levels at the time with 5 emails to categorize each. 
+
+
+<a href="https://github.com/kyrHonch/emails-please">Github Link.</a>
