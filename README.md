@@ -1,2 +1,2 @@
 # emails-please
-Papers Please Copy, but with an email twist
+Papers Please Copy, but with a twist
