@@ -43,7 +43,7 @@
     border-radius: 8px;
     font-size: 1.2rem;
     z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     animation: fade-in-out 5s ease;
 }
 
@@ -128,5 +128,31 @@ button.green {
     border-radius: 8px;
     font-size: 1.2rem;
     z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }

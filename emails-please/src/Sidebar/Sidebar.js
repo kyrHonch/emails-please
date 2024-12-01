@@ -16,14 +16,15 @@ function Sidebar({ criteria, onSelect }) {
 
     return (
         <div className="sidebar">
+            <h3>Select an Error</h3>
             {criteria.map((criterion, index) => (
-                <div
+                <button
                     key={index}
-                    className={`criteria-item ${selected === index ? 'selected' : ''}`}
                     onClick={() => handleClick(index, criterion)}
+                    className={selected === index ? 'selected' : ''}
                 >
                     {criterion}
-                </div>
+                </button>
             ))}
         </div>
     );
