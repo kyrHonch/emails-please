@@ -6,7 +6,7 @@ function MainMenu() {
   const navigate = useNavigate();
 
   const handleStartNewGame = () => {
-    navigate("/email1");
+    navigate("/game");
   };
 
   const handleRules = () => {

@@ -1,26 +1,24 @@
-/* MainMenu.css */
-
 body {
   margin: 0;
-  font-family: "Press Start 2P", cursive; /* Add a retro font */
-  background-color: #000; /* Dark background */
-  color: #00ff00; /* Neon green text */
+  font-family: "Munro", sans-serif;
+  background-color: #000;
+  color: #00ff00;
 }
 
 .main-menu {
   text-align: center;
   padding: 50px;
   border: 3px solid #00ff00;
-  margin: 20px auto;
+  margin: 350px auto;
   width: 80%;
   max-width: 600px;
-  background-color: #111; /* Slightly lighter background for contrast */
+  background-color: #111;
   box-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00 inset;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 4rem;
+  margin-bottom: 40px;
   text-shadow: 0 0 8px #00ff00;
 }
 
@@ -34,15 +32,15 @@ li {
 }
 
 button {
-  font-size: 1.2rem;
-  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-family: "Munro", sans-serif;
+  padding: 10px 20px;
   color: #000;
   background-color: #00ff00;
   border: 2px solid #00ff00;
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0 0 10px #00ff00, 0 0 5px #00ff00 inset;
-  font-family: "Press Start 2P", cursive; /* Consistent retro font */
 }
 
 button:hover {
