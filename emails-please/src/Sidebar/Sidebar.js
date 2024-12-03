@@ -16,7 +16,7 @@ function Sidebar({ criteria, onSelect }) {
 
     return (
         <div className="sidebar">
-            <h3>Select an Error</h3>
+            <h2>Select an Error</h2>
             {criteria.map((criterion, index) => (
                 <button
                     key={index}

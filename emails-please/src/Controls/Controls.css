@@ -14,24 +14,26 @@
 }
 
 .button.block {
-    background-color: #f44336;
+    background-color: #000000;
     color: white;
 }
 
 .button.block:hover {
-    background-color: #d32f2f;
+    background-color: #03ff00;
+    color: #000000;
 }
 
 .button.send {
-    background-color: #4caf50;
-    color: white;
+    background-color: #03ff00;
+    color: #000000;
 }
 
 .button.send:hover {
-    background-color: #388e3c;
+    background-color: #000000;
+    color: white;
 }
 
 .button.send.disabled {
-    background-color: #2e7d32;
+    background-color: #000000;
     color: white;
 }

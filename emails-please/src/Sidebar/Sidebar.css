@@ -1,8 +1,8 @@
 .sidebar {
     width: 250px; 
     padding: 20px;
-    background-color: #2a2c2f;
-    border-right: 1px solid #ddd;
+    background-color: #000000;
+    border-right: 0.5px solid #03ff00;
 }
 
 .sidebar h3 {
@@ -18,22 +18,23 @@
     border: 1px solid #000;
     border-radius: 8px;
     font-size: 1rem;
-    background-color: #202124;
-    color: #ffffff;
+    background-color: #03ff00;
+    color: #000000;
     cursor: pointer;
-    text-align: left; 
+    text-align: center;
     box-sizing: border-box; 
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .sidebar button:hover {
-    background-color: #f1f1f1;
+    background-color: #000000;
+    color: #03ff00;
     border-color: #aaa;
 }
 
 .sidebar button.selected {
-    background-color: #4caf50; 
-    color: #fff;
+    background-color: #000000;
+    color: #03ff00;
     border-color: #4caf50;
 }
 
