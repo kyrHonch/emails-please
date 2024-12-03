@@ -6,7 +6,7 @@
     padding: 20px;
     border: 1px solid #000;
     border-radius: 12px;
-    background-color: #fff;
+    background-color: #202124;
     box-sizing: border-box;
 }
 
@@ -17,13 +17,13 @@
     width: 100%;
     padding: 15px 20px;
     margin-bottom: 15px;
-    border: 2px solid #000;
     border-radius: 25px;
     font-size: 1rem;
-    background-color: #fff;
-    color: #000;
+    color: #e8eaed;
     box-sizing: border-box;
     transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: #2a2c2f;
+    border: 1px solid #3c4043;
 }
 
 .email-body {
