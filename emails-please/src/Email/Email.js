@@ -10,11 +10,11 @@ function Email({
                    fieldHighlights,
                }) {
     const isFieldDisabled = (field) => {
-        // Check if the field is permanently disabled
+
         if (permanentlyDisabledFields.includes(field)) {
             return true;
         }
-        // Check if the field is temporarily disabled for the selected error type
+
         const currentAttempts = temporarilyDisabledFields[selectedError] || [];
         return currentAttempts.includes(field);
     };

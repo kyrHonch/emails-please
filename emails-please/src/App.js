@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainMenu from "./MainMenu/MainMenu";
-// import Email from "./Email/Email";
 import Rules from "./Rules/Rules";
 import EmailInspection from "./EmailInspection/EmailInspection";
 import "./App.css";

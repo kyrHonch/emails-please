@@ -165,7 +165,7 @@ function EmailInspection() {
           <p>Loading emails...</p>
         )}
         <Controls
-            onBlock={handleNextEmail}
+            on_click={handleNextEmail}
             onSend={handleNextEmail}
             isSendDisabled={isSendDisabled}
         />
