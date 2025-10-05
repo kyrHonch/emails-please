@@ -1,62 +1,166 @@
-[{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-}
+[
+  {
+    "Header": "Re: Updated invoice for Project Alpha",
+    "Body": "Hi Jennifer,\n\nThanks for following up. I've attached the revised invoice reflecting the scope changes we discussed.\n\nThe updated total is $12,450. Please process payment to the account details in the attached PDF.\n\nLet me know if you need anything else.\n\nBest,\nDavid Thompson\nSenior Account Manager\nThompson Consulting Group",
+    "EmailSender": "d.thompson@thompsonconsulting.co",
+    "EmailReceiver": "j.martinez@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Fake Branding",
+        "ErrorField": "EmailSender"
+      },
+      {
+        "ErrorType": "Suspicious Attachments",
+        "ErrorField": "image-0"
+      }
+    ],
+    "Images": [{
+      "src": "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+      "label": "Invoice_ProjectAlpha_Revised.pdf"
+    }]
+  },
+  {
+    "Header": "Fwd: Team Building Event - RSVP Required",
+    "Body": "---------- Forwarded message ---------\nFrom: HR Department <hr@company.com>\nDate: Mon, Oct 2, 2023 at 10:15 AM\nSubject: Team Building Event - RSVP Required\nTo: All Staff\n\nHello Team,\n\nWe're excited to announce our annual team building retreat on November 15th!\n\nPlease RSVP and submit your dietary preferences through our event portal:\nhttps://company-events-rsvp.com/teambuilding2023\n\nLooking forward to seeing everyone there!\n\nHR Team",
+    "EmailSender": "hr.department@company-internal.com",
+    "EmailReceiver": "staff@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Fake Branding",
+        "ErrorField": "EmailSender"
+      },
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Your DocuSign Document is Ready for Signature",
+    "Body": "Hello,\n\nYou have a document waiting for your signature.\n\nDocument: Employment_Agreement_2024.pdf\nFrom: HR Department (hr@yourcompany.com)\nExpires: October 8, 2023\n\nReview and sign your document:\nhttps://docusign-secure.net/sign/d847f2a1\n\nIf you have questions about this document, please contact the sender directly.\n\nThank you for using DocuSign.\n\nDocuSign, Inc.",
+    "EmailSender": "no-reply@docusign.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "URGENT: Complete Your Annual Compliance Training by Oct 15",
+    "Body": "Dear Employee,\n\nThis is a reminder that your annual compliance training is due by October 15th.\n\nCourse: Information Security & Data Privacy 2024\nEstimated Time: 45 minutes\n\nAccess your training module here:\nhttps://training-portal-secure.net/compliance/login\n\nIf you have already completed this training, please disregard this message.\n\nCompliance Training Department",
+    "EmailSender": "compliance@company.training-portal.com",
+    "EmailReceiver": "employees@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Fake Branding",
+        "ErrorField": "EmailSender"
+      },
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      },
+      {
+        "ErrorType": "Urgency",
+        "ErrorField": "Header"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "URGENT: Apple ID Will Be Disabled - Verify Within 24 Hours",
+    "Body": "Dear Apple Customer,\n\nWe have detected unusual activity associated with your Apple ID (us***@example.com).\n\nFor your security, we have temporarily limited your account access. To restore full functionality, please verify your account information.\n\nVerify your Apple ID:\nhttps://appleid-apple.com/verify-account\n\nApple Support Team\n\nApple Inc. | One Apple Park Way | Cupertino, CA 95014",
+    "EmailSender": "no-reply@appleid.apple.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      },
+      {
+        "ErrorType": "Urgency",
+        "ErrorField": "Header"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Zoom Meeting Invite: Q3 Strategy Review",
+    "Body": "You have been invited to a Zoom meeting.\n\nTopic: Q3 Strategy Review - Executive Team\nTime: October 10, 2023 02:00 PM Eastern Time\nHost: Sarah Chen, VP Operations\n\nJoin Zoom Meeting:\nhttps://zoom-us-meeting.net/j/8472916384?pwd=QmxkZ\n\nMeeting ID: 847 291 6384\nPasscode: 529174\n\nPlease join 5 minutes early to test your audio/video.\n\nThis is an automated message from Zoom.",
+    "EmailSender": "no-reply@zoom.us",
+    "EmailReceiver": "executives@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "URGENT: Bank of America Fraud Alert - Verify Transaction Now",
+    "Body": "Dear Valued Customer,\n\nWe noticed a large transaction on your Bank of America checking account:\n\nDate: October 5, 2023\nAmount: $3,847.92\nMerchant: Electronics World - Hong Kong\nStatus: Pending Review\n\nIf you recognize this transaction, no action is needed.\n\nIf you did NOT authorize this purchase, please verify your account immediately:\nhttps://bankofamerica-secure-verify.com/fraud-check\n\nBank of America Fraud Prevention\n24/7 Customer Service: 1-800-432-1000",
+    "EmailSender": "alerts@bankofamerica.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      },
+      {
+        "ErrorType": "Urgency",
+        "ErrorField": "Header"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Microsoft Teams: You've been added to a new team",
+    "Body": "Hello,\n\nYou've been added to the following team in Microsoft Teams:\n\nTeam: IT Security Projects\nAdded by: Robert Martinez (IT Director)\nOrganization: Example Corp\n\nView team and start collaborating:\nhttps://teams-microsoft.com/join/team/a8f4d2c1\n\nYou can manage your Teams notifications in Settings.\n\nMicrosoft Teams\nMicrosoft Corporation",
+    "EmailSender": "teams@microsoft.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Chase Credit Card: Unusual Activity Alert",
+    "Body": "Chase Fraud Alert\n\nWe detected the following potentially fraudulent charges on your Chase Sapphire Reserve card ending in 4892:\n\n- $847.50 at Best Buy Online\n- $1,249.00 at Apple Store\n- $625.00 at Target.com\n\nTotal: $2,721.50\n\nDid you make these purchases?\n\nYES - No action needed\nNO - Secure your account now: https://chase-fraud-alert.com/verify\n\nTo speak with our fraud department, call: 1-800-935-9935\n\nChase Bank\nFraud Prevention Team",
+    "EmailSender": "fraud-alerts@chase.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Re: Contract renewal discussion",
+    "Body": "Hi Alex,\n\nFollowing up on our call yesterday about the contract renewal.\n\nI've prepared the updated terms document with the pricing we agreed upon. Please review the attached file and let me know if everything looks correct.\n\nWe'd like to finalize this by end of week if possible, as our fiscal quarter closes Friday.\n\nLet me know if you have any questions.\n\nRegards,\nJessica Williams\nBusiness Development Manager\nGlobal Solutions Inc.\n\n---\nJessica Williams\nBusiness Development Manager\nGlobal Solutions Inc.\njwilliams@globalsolutions.com\n+1 (555) 847-2936",
+    "EmailSender": "j.williams@global-solutions.co",
+    "EmailReceiver": "a.thompson@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Fake Branding",
+        "ErrorField": "EmailSender"
+      },
+      {
+        "ErrorType": "Suspicious Attachments",
+        "ErrorField": "image-0"
+      }
+    ],
+    "Images": [{
+      "src": "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+      "label": "Contract_Renewal_2024_Terms.pdf"
+    }]
+  }
 ]

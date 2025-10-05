@@ -6,7 +6,7 @@
 
 .points-counter {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     text-align: center;
     left: 30px;
     background-color: #000000;
@@ -145,4 +145,18 @@ button:disabled {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.error-counter {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    background-color: #03ff00;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }

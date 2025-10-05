@@ -7,6 +7,7 @@ function Controls({ on_click, onSend, isSendDisabled }) {
             <button
                 className={`button send ${isSendDisabled ? 'disabled' : ''}`}
                 onClick={on_click}
+                disabled={isSendDisabled}
             >
                 Next
             </button>

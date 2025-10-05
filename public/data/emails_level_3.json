@@ -1,62 +1,147 @@
-[{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-},{
-  "Header": "",
-  "Body": "",
-  "EmailSender": "",
-  "NameSender": "",
-  "EmailReceiver": "",
-  "NameReceiver": "",
-  "Error": "",
-  "ErrorField": "",
-  "ErrorType": "",
-  "Completed": "",
-  "Images": ""
-}
+[
+  {
+    "Header": "Re: Q4 Board Meeting Materials",
+    "Body": "Hi Rebecca,\n\nAs discussed in our last steering committee meeting, I've compiled the board presentation materials for next week's quarterly review.\n\nThe deck includes:\n- Q4 financial performance vs. projections\n- 2024 strategic initiatives update\n- Risk assessment and mitigation strategies\n\nPlease review the attached presentation and let me know if you'd like any adjustments before I distribute to the full board.\n\nAlso, a reminder that David Chen will be joining us to present the cybersecurity audit findings.\n\nBest regards,\nMichael Patterson\nChief Financial Officer\nStrataCorp Industries\n\n---\nMichael Patterson, CPA\nChief Financial Officer\nStrataCorp Industries\n500 Commerce Plaza, Suite 2800\nDallas, TX 75201\nmpatterson@stratacorp.com\nOffice: +1 (214) 555-0147\nMobile: +1 (214) 555-0148",
+    "EmailSender": "m.patterson@stratacorp-corp.com",
+    "EmailReceiver": "r.sullivan@stratacorp.com",
+    "Errors": [
+      {
+        "ErrorType": "Fake Branding",
+        "ErrorField": "EmailSender"
+      }
+    ],
+    "Images": [{
+      "src": "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+      "label": "Q4_Board_Presentation_Draft_v3.pptx"
+    }]
+  },
+  {
+    "Header": "Fwd: Vendor Security Questionnaire - Annual Review",
+    "Body": "---------- Forwarded message ---------\nFrom: Compliance Team <compliance@techsolutions.com>\nDate: Thu, Oct 5, 2023 at 9:42 AM\nSubject: Vendor Security Questionnaire - Annual Review\nTo: Vendor Contacts <vendors@lists.techsolutions.com>\n\nDear Valued Partner,\n\nAs part of our annual vendor risk assessment program, we require all technology vendors to complete our updated security questionnaire.\n\nThis year's questionnaire includes:\n- SOC 2 Type II compliance status\n- Data encryption standards\n- Incident response procedures\n- Business continuity planning\n\nPlease complete the questionnaire by October 20th:\nhttps://vendor-portal.techsolutions-secure.com/assessment/2024\n\nYour account credentials:\nVendor ID: VEND-8472-2024\nAccess Code: Will be sent separately\n\nThank you for your continued partnership.\n\nSarah Mitchell\nVendor Risk Management\nTechSolutions Enterprise Services",
+    "EmailSender": "compliance@techsolutions.com",
+    "EmailReceiver": "partnerships@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "LinkedIn: John Anderson wants to connect",
+    "Body": "Hi there,\n\nJohn Anderson would like to connect with you on LinkedIn.\n\nJohn Anderson\nSenior Vice President, Strategic Partnerships\nGoldman Sachs\nNew York, New York\n\nYou and John both know 12 people, including:\n- Sarah Chen (VP, Business Development at Microsoft)\n- David Rodriguez (Managing Director at JPMorgan Chase)\n- Jennifer Thompson (Partner at McKinsey & Company)\n\nView John's profile: https://linkedin.com-profile.net/in/john-anderson-gs\n\nAccept invitation: https://linkedin.com-profile.net/accept/inv/JA847291\n\n---\nYou're receiving this email because John Anderson invited you to connect. Unsubscribe from emails like this or adjust your email settings.\n\n© 2023 LinkedIn Corporation, 1000 West Maude Avenue, Sunnyvale, CA 94085",
+    "EmailSender": "invitations@linkedin.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Action Required: Multi-Factor Authentication Enrollment by Oct 12",
+    "Body": "Dear Employee,\n\nAs part of our ongoing security enhancement initiative, all employees are required to enroll in Multi-Factor Authentication (MFA) for access to company systems.\n\nWhat you need to do:\n1. Navigate to the IT Security Portal\n2. Select \"MFA Enrollment\" from the dashboard\n3. Follow the setup wizard to configure your authentication method\n\nAccess the IT Security Portal:\nhttps://security-portal.company-it.net/mfa-setup\n\nSupported authentication methods:\n- Microsoft Authenticator (recommended)\n- SMS text message\n- Hardware security key\n\nIf you encounter any issues during enrollment, please contact the IT Service Desk at extension 5500 or servicedesk@company.com.\n\nThank you for helping us maintain a secure environment.\n\nIT Security Team\nInformation Technology Department",
+    "EmailSender": "itsecurity@company-services.com",
+    "EmailReceiver": "all-employees@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Fake Branding",
+        "ErrorField": "EmailSender"
+      },
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      },
+      {
+        "ErrorType": "Urgency",
+        "ErrorField": "Header"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Wells Fargo: Verify SSN, DOB, and Debit Card Information",
+    "Body": "Dear Wells Fargo Customer,\n\nWe are upgrading our online banking security infrastructure to provide you with enhanced protection against fraud and unauthorized access.\n\nAs part of this upgrade, all customers must verify their account information to continue using Wells Fargo Online Banking and Mobile Banking services.\n\nYour account details:\nAccount Type: Premium Checking\nAccount Number: ****3847\nLast Login: October 4, 2023\n\nComplete your account verification:\nhttps://wellsfargo.com/verify-account-upgrade\n\nIf verification is not completed by October 10th, your online and mobile banking access will be temporarily suspended until you visit a branch in person to complete the process.\n\nFor assistance, please call our 24/7 Customer Service at 1-800-869-3557.\n\nThank you for banking with Wells Fargo.\n\nWells Fargo Bank, N.A.\nMember FDIC\n\n---\nPrivacy, Cookies, Security & Legal\nWells Fargo & Company. All rights reserved.\n420 Montgomery Street, San Francisco, CA 94104",
+    "EmailSender": "customerservice@wellsfargo.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      },
+      {
+        "ErrorType": "Asking for Sensitive Information",
+        "ErrorField": "Header"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Google Workspace Admin Alert: New device sign-in",
+    "Body": "Google Workspace Alert\n\nA new device recently signed in to your Google Workspace admin account.\n\nDevice details:\nDevice: Windows PC\nBrowser: Chrome 118.0\nLocation: Warsaw, Poland\nIP Address: 185.47.129.42\nDate/Time: October 5, 2023 at 3:47 AM PDT\n\nIf this was you, you can disregard this message.\n\nIf you don't recognize this activity:\n1. Secure your account immediately\n2. Review recent account activity\n3. Change your password\n\nSecure your account: https://workspace-google.com/security/alert/respond\n\nView activity: https://workspace-google.com/admin/security/activity\n\nFor additional support, visit the Google Workspace Admin Help Center or contact Google Support.\n\nThis email was sent to admin@example.com because it is the primary contact for your Google Workspace account.\n\nGoogle LLC\n1600 Amphitheatre Parkway\nMountain View, CA 94043, USA",
+    "EmailSender": "no-reply@google.com",
+    "EmailReceiver": "admin@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Accounting: Wire Transfer Confirmation Required - URGENT",
+    "Body": "Hi Maria,\n\nI need you to process an urgent wire transfer for the Horizon acquisition that closed yesterday. Our counsel needs the escrow funds transferred today to complete the filing.\n\nTransfer details:\nAmount: $247,500.00\nBeneficiary: Horizon Escrow Services LLC\nBank: First Republic Bank\nAccount Number: 8847291638\nRouting Number: 321081669\nReference: HRZ-ACQ-2024-Q4\n\nPlease process this immediately and send me the wire confirmation receipt.\n\nI'm in back-to-back meetings until 4 PM but need confirmation this went through before market close.\n\nThanks,\nRobert\n\n---\nRobert Chen\nChief Financial Officer\nNexGen Technologies Inc.\nrchen@nexgentech.com\nOffice: (408) 555-0192",
+    "EmailSender": "r.chen@nexgentech.com",
+    "EmailReceiver": "m.santos@nexgentech.com",
+    "Errors": [
+      {
+        "ErrorType": "Urgency",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Microsoft 365 Message Encryption: You have received a secure message",
+    "Body": "You have received a secure message\n\nSender: Thomas Anderson (t.anderson@kpmg.com)\nSubject: 2023 Tax Documents - Confidential\nSent: October 5, 2023 10:24 AM\n\nMessage preview:\n\"Please review the attached documents for your 2023 tax filings. These contain sensitive financial information and should be...\"\n\nTo read this encrypted message, please verify your identity:\n\nRead the message: https://office365-encryption.com/secure/msg/8d7f2a91\n\nFirst time viewing a protected message?\nClick \"Sign in with a one-time passcode\" and we'll send a code to your email address.\n\nThis message was sent using Microsoft 365 Message Encryption. The sender has taken steps to ensure this message is secure.\n\nLearn more about Microsoft 365 Message Encryption:\nhttps://office365-encryption.com/learn\n\n---\nMicrosoft respects your privacy. Review our Privacy Statement.\nMicrosoft Corporation\nOne Microsoft Way\nRedmond, WA 98052",
+    "EmailSender": "no-reply@microsoft.com",
+    "EmailReceiver": "user@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Salesforce Security Alert: Password reset requested",
+    "Body": "Salesforce Security Notification\n\nA password reset was requested for your Salesforce account.\n\nAccount information:\nUsername: admin@example.com\nOrganization: Example Corp (Production)\nInstance: na147.salesforce.com\nRequest Time: October 5, 2023 at 11:23 AM PDT\nRequest Source: Desktop Browser (Chrome)\nIP Address: 203.45.128.77 (Singapore)\n\nDid you request this password reset?\n\nYES - Complete password reset:\nhttps://salesforce-login.com/reset/confirm/8f7d2c1a4b\n\nNO - Secure your account:\nhttps://salesforce-login.com/security/alert\n\nThis password reset link will expire in 60 minutes.\n\nIf you did not request this password reset, your account may be compromised. We recommend:\n1. Changing your password immediately\n2. Reviewing your login history\n3. Enabling two-factor authentication\n4. Reviewing connected apps and API tokens\n\nFor security questions, contact your Salesforce Administrator or visit Salesforce Help.\n\n---\nSalesforce.com, Inc.\nThe Landmark @ One Market Street\nSuite 300\nSan Francisco, CA 94105\nUnited States",
+    "EmailSender": "security@salesforce.com",
+    "EmailReceiver": "admin@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  },
+  {
+    "Header": "Adobe Sign: \"NDA_StrategicPartnership_2024.pdf\" is ready for your signature",
+    "Body": "Document ready for signature\n\nJennifer Martinez (j.martinez@techventures.com) has sent you \"NDA_StrategicPartnership_2024.pdf\" for your signature via Adobe Sign.\n\nDocument summary:\nTitle: Non-Disclosure Agreement - Strategic Partnership\nSender: Jennifer Martinez (TechVentures Capital)\nPages: 8\nExpires: October 12, 2023\nSigning deadline: 7 days from receipt\n\nYour action:\nPlease review and sign this document at your earliest convenience.\n\nReview and sign: https://adobesign-documents.net/sign/v1/8d92f4a7\n\nMessage from sender:\n\"Hi - Please review and execute the NDA we discussed on our call. Once this is signed, I'll send over the full investment term sheet and supporting financials for the Series B round. Let me know if you have any questions. Thanks!\"\n\nNeed help?\nVisit the Adobe Sign Help Center or contact Adobe Support\n\n---\nAbout Adobe Sign\nAdobe Sign is the world's most trusted e-signature solution. Learn more at adobe.com/sign\n\nYou are receiving this email because jennifer.martinez@techventures.com sent you a document via Adobe Sign.\n\nAdobe\n345 Park Avenue\nSan Jose, CA 95110-2704\nUSA",
+    "EmailSender": "no-reply@adobesign.com",
+    "EmailReceiver": "partnerships@example.com",
+    "Errors": [
+      {
+        "ErrorType": "Suspicious Links",
+        "ErrorField": "Body"
+      }
+    ],
+    "Images": []
+  }
 ]

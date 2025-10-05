@@ -7,7 +7,7 @@ import "./EmailInspection.css";
 function EmailInspection() {
   const [selectedError, setSelectedError] = useState(null);
   const [matchStatus, setMatchStatus] = useState(null);
-  const [isSendDisabled] = useState(false);
+  const [isSendDisabled, setIsSendDisabled] = useState(true);
   const [accuracyScore, setAccuracyScore] = useState(63.9);
   const [attemptedFields, setAttemptedFields] = useState({});
   const [totalErrors, setTotalErrors] = useState(0); // Total errors in all emails
@@ -18,6 +18,7 @@ function EmailInspection() {
   const [isCompletePopupVisible, setIsCompletePopupVisible] = useState(false);
   const [permanentlyDisabledFields, setPermanentlyDisabledFields] = useState([]); // Fields disabled for all errors
   const [temporarilyDisabledFields, setTemporarilyDisabledFields] = useState({}); // Fields disabled for specific error types
+  const [foundErrorsInCurrentEmail, setFoundErrorsInCurrentEmail] = useState(0); // Track errors found in current email
 
   useEffect(() => {
     const fetchEmails = async () => {
@@ -63,16 +64,38 @@ function EmailInspection() {
 
     const currentEmail = emails[currentEmailIndex];
 
-    const isCorrect = currentEmail.Errors.some(
-        (error) =>
-            error.ErrorType.toLowerCase() === selectedError.toLowerCase() &&
-            error.ErrorField.toLowerCase() === field.toLowerCase()
-    );
+    // Map UI field names to JSON field names for better detection
+    const fieldMapping = {
+      'from': 'emailsender',
+      'to': 'emailreceiver',
+      'header': 'header',
+      'body': 'body'
+    };
+
+    // Normalize the field name for comparison
+    let normalizedField = field.toLowerCase();
+    if (fieldMapping[normalizedField]) {
+      normalizedField = fieldMapping[normalizedField];
+    }
+
+    const isCorrect = currentEmail.Errors.some((error) => {
+      const errorType = error.ErrorType.toLowerCase();
+      const errorField = error.ErrorField.toLowerCase();
+
+      // Check exact match
+      if (errorType === selectedError.toLowerCase() && errorField === normalizedField) {
+        return true;
+      }
+
+      // Check if the error field matches the original field (for image-0, etc.)
+      return errorType === selectedError.toLowerCase() && errorField === field.toLowerCase();
+
+
+    });
 
     if (isCorrect) {
       setMatchStatus("match found");
       setAccuracyScore((prev) => Math.min(prev + 20, 100)); // Reward for correct match
-      setCorrectlyIdentifiedErrors((prev) => prev + 1); // Increment correctly identified errors
 
       // Permanently disable the field for all error types
       setPermanentlyDisabledFields((prev) => [...prev, field]);
@@ -81,6 +104,18 @@ function EmailInspection() {
         ...prev,
         [field]: "correct",
       }));
+
+      // Increment found errors and check if all errors are found
+      const newFoundErrors = foundErrorsInCurrentEmail + 1;
+      setFoundErrorsInCurrentEmail(newFoundErrors);
+
+      // Increment the global counter for correctly identified errors
+      setCorrectlyIdentifiedErrors((prev) => prev + 1);
+
+      // Enable Next button if all errors in current email are found
+      if (newFoundErrors >= currentEmail.Errors.length) {
+        setIsSendDisabled(false);
+      }
     } else {
       setMatchStatus("no match found");
       setAccuracyScore((prev) => Math.max(prev * 0.9, 0)); // Penalty for incorrect match
@@ -107,6 +142,8 @@ function EmailInspection() {
       setFieldHighlights({}); // Reset field highlights for the next email
       setPermanentlyDisabledFields([]); // Clear permanently disabled fields
       setTemporarilyDisabledFields({}); // Clear temporarily disabled fields
+      setFoundErrorsInCurrentEmail(0); // Reset found errors counter
+      setIsSendDisabled(true); // Disable Next button for new email
     } else {
       setIsCompletePopupVisible(true); // Show the completion popup when all emails are done
     }
@@ -169,6 +206,9 @@ function EmailInspection() {
             onSend={handleNextEmail}
             isSendDisabled={isSendDisabled}
         />
+        <div className="error-counter">
+          Errors Found: {foundErrorsInCurrentEmail}/{currentEmail?.Errors?.length || 0}
+        </div>
       </div>
       {matchStatus && (
         <div
